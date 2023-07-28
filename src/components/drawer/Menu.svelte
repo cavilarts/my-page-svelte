@@ -1,3 +1,7 @@
+<script>
+	import { authHandlers, authStore } from '../../store/store';
+</script>
+
 <li>
 	<details>
 		<summary>Articles</summary>
@@ -36,4 +40,13 @@
 			</li>
 		</ul>
 	</details>
+</li>
+<li>
+	{#if $authStore.user}
+		<button class="btn btn-primary flex content-center" on:click={() => authHandlers.logout()}
+			>Logout</button
+		>
+	{:else}
+		<a class="btn btn-secondary flex content-center" href="/admin/login">Login</a>
+	{/if}
 </li>

@@ -41,6 +41,7 @@
 		"@tiptap/core": "^2.0.4",
 		"@tiptap/pm": "^2.0.4",
 		"@tiptap/starter-kit": "^2.0.4",
+		"firebase": "^10.0.0",
 		"svelte-icons": "^2.1.0",
 		"svelte-vertical-timeline": "^1.0.0"
 	}
