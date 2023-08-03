@@ -1,5 +1,8 @@
 <script lang="ts">
 	import Tiptap from '$lib/Tiptap.svelte';
+	import { db } from '$lib/firebase/firebase';
+	import { collection, doc, setDoc } from 'firebase/firestore';
+	import { v4 as uuidv4 } from 'uuid';
 
 	let title = '';
 	let content = '';
@@ -10,6 +13,22 @@
 
 	function handleTitle(event: Event) {
 		title = (event.target as HTMLInputElement).value;
+	}
+
+	async function handleSubmit(event: Event) {
+		event.preventDefault();
+
+		const articlesRef = collection(db, 'articles');
+
+		await setDoc(doc(articlesRef, uuidv4()), {
+			title,
+			content,
+			views: 0,
+			likes: 0,
+			comments: 0,
+			slug: title.toLowerCase().replace(/\s/g, '-')
+		});
+		window.location.href = '/admin/articles';
 	}
 </script>
 
@@ -28,5 +47,5 @@
 	</div>
 	<Tiptap on:message={handleMessage} />
 
-	<button class="btn btn-primary">Create</button>
+	<button on:click={handleSubmit} class="btn btn-primary">Create</button>
 </section>

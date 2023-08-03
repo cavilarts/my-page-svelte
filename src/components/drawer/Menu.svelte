@@ -3,6 +3,9 @@
 </script>
 
 <li>
+	<a href="/admin/dashboard">Dashboard</a>
+</li>
+<li>
 	<details>
 		<summary>Articles</summary>
 		<ul>

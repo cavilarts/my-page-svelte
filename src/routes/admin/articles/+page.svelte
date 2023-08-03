@@ -3,35 +3,34 @@
 	import IoMdThumbsUp from 'svelte-icons/io/IoMdThumbsUp.svelte';
 	import IoMdChatboxes from 'svelte-icons/io/IoMdChatboxes.svelte';
 	import GoPencil from 'svelte-icons/go/GoPencil.svelte';
+	import { onMount } from 'svelte';
+	import { collection, getDocs } from 'firebase/firestore';
+	import { db } from '$lib/firebase/firebase';
 
-	let articles = [
-		{
-			id: 1,
-			title: 'Article 1',
-			views: 10,
-			likes: 5,
-			comments: 2,
-			slug: 'article-1',
-			created_at: '2021-01-01 00:00:00',
-			updated_at: '2021-01-01 00:00:00'
-		},
-		{
-			id: 2,
-			title: 'Article 2',
-			views: 10,
-			likes: 5,
-			comments: 2,
-			slug: 'article-2',
-			created_at: '2021-01-01 00:00:00',
-			updated_at: '2021-01-01 00:00:00'
-		}
-	];
+	let articles: any[] = [];
+	let loaded = false;
+	let loading = false;
+
+	onMount(async () => {
+		if (loaded) return;
+		loading = true;
+
+		const articlesRef = collection(db, 'articles');
+		const articlesSnap = await getDocs(articlesRef);
+
+		articles = articlesSnap.docs.map((doc) => {
+			return {
+				id: doc.id,
+				...doc.data()
+			};
+		});
+	});
 </script>
 
 <section class="w-full">
 	<div class="flex justify-between w-full items-center">
 		<h2 class="text-3xl my-6">Articles</h2>
-		<button class="btn btn-primary">New Article</button>
+		<a href="/admin/articles/create" class="btn btn-primary">New Article</a>
 	</div>
 	{#each articles as article}
 		<article class="bg-primary-content px-6 py-4 mb-4 flex justify-between items-center">
