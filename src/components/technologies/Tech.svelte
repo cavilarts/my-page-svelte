@@ -1,4 +1,4 @@
-<section class="flex flex-row flex-wrap justify-center gap-10">
+<section class="flex flex-row flex-wrap justify-center gap-10 mt-8">
 	<div class="bg-white rounded-full p-2 w-24 flex content-center align-middle justify-center">
 		<figure>
 			<img src="/images/css3.png" alt="CSS 3" width="100" height="100" />

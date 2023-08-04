@@ -2,8 +2,8 @@
 	<a href="/">Blog</a>
 </li>
 <li>
-	<a href="/">Projects</a>
+	<a href="#projects">Projects</a>
 </li>
 <li>
-	<a href="/">About</a>
+	<a href="#about">About</a>
 </li>

@@ -2,14 +2,13 @@
 	import { onMount } from 'svelte';
 	import { auth, db } from '$lib/firebase/firebase';
 	import { doc, getDoc } from 'firebase/firestore';
-	import { authStore } from '../../store/store';
+	import { authStore } from '../../../store/store';
 
 	const nonAuthRoutes = ['/admin'];
 
 	onMount(() => {
 		const unsubscribe = auth.onAuthStateChanged(async (user) => {
 			const currentPath = window.location.pathname;
-			debugger;
 
 			if (!user && !nonAuthRoutes.includes(currentPath)) {
 				window.location.href = '/admin';
@@ -54,6 +53,4 @@
 	});
 </script>
 
-<section class="max-w-7xl w-full m-auto px-8 md:px-4">
-	<slot />
-</section>
+<slot />
