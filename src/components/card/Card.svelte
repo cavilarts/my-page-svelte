@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="w-full h-full bg-gradient-to-b from-green-600 to-violet-600 p-[1px] rounded-3xl shadow-md"
+	class="w-full h-full bg-gradient-to-b from-orange-400 to-violet-600 p-[1px] rounded-3xl shadow-md"
 >
 	<article
 		class="card h-full shadow-xl rounded-3xl bg-secondary-content text-center flex flex-col items-center"
