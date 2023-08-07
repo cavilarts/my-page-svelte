@@ -10,6 +10,7 @@
 	import PageContent from '../components/pageContent/PageContent.svelte';
 	import Timeline from '../components/timeline/Timeline.svelte';
 	import Tech from '../components/technologies/Tech.svelte';
+	import Footer from '../components/footer/Footer.svelte';
 </script>
 
 <Hero
@@ -59,21 +60,79 @@
 	<PageContent
 		title="Projects"
 		subtitle="My Work"
-		description="Throughout my carreer I have worked on many projects, here are some of them"
+		description="I have collaborated with many companies and organizations, here are some of them and the projects I have worked on."
 	>
-		<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
-			<div class="card w-96 bg-base-100 shadow-xl">
-				<figure><img src="/images/project-a.png" alt="Shoes" /></figure>
-				<div class="card-body">
-					<h2 class="card-title">Website</h2>
-					<p>Funny web site</p>
-					<div class="card-actions justify-end">
-						<span class="text-primary">#react</span>
-						<span class="text-secondary">#mongodb</span>
-						<span class="text-accent">#tailwind</span>
+		<section class="flex flex-wrap gap-0 items-stretch md:justify-between justify-center">
+			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
+				<div class="card w-96 bg-base-100 shadow-xl">
+					<figure><img src="/images/Sellwhenever.png" alt="SellWhenever" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">SellWhenever</h2>
+						<p>Real State application to help Home owners in United States to match with Agents.</p>
+						<div class="card-actions justify-end">
+							<span class="text-primary">#NextJs</span>
+							<span class="text-secondary">#React</span>
+							<span class="text-accent">#Styled Components</span>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
+			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
+				<div class="card w-96 bg-base-100 shadow-xl">
+					<figure><img src="/images/tmx.png" alt="UseTMX" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">TMX News</h2>
+						<p>
+							TMX web application to upload content as journalist and be able to sell to news
+							corporations
+						</p>
+						<div class="card-actions justify-end">
+							<span class="text-secondary">#React</span>
+							<span class="text-primary">#Redux</span>
+							<span class="text-accent">#Sass</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
+				<div class="card w-96 bg-base-100 shadow-xl">
+					<figure><img src="/images/tmx.png" alt="UseTMX" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">Southwest</h2>
+						<p>
+							I have collaborated with Low-Fare callendar team to help them with the implementation
+							of the new design of the website.
+						</p>
+						<div class="card-actions justify-end">
+							<span class="text-secondary">#React</span>
+							<span class="text-primary">#Redux</span>
+							<span class="text-accent">#Sass</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
+				<div class="card w-96 bg-base-100 shadow-xl">
+					<figure><img src="/images/nissan-inventory.png" alt="Nissan Inventory" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">Nissan Car Inventory</h2>
+						<p>
+							I have collaborated with the car Inventory for multiple markets, I have helped them
+							with the implementation and the architecture of the application.
+						</p>
+						<div class="card-actions justify-end">
+							<span class="text-secondary">#Backbone</span>
+							<span class="text-primary">#Marionette</span>
+							<span class="text-accent">#Sass</span>
+						</div>
+					</div>
+				</div>
+			</section>
 		</section>
 	</PageContent>
 </section>
+
+<Footer />

@@ -1,6 +1,6 @@
-<li>
+<!-- <li>
 	<a href="/">Blog</a>
-</li>
+</li> -->
 <li>
 	<a href="#projects">Projects</a>
 </li>

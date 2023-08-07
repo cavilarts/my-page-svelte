@@ -11,7 +11,7 @@
 <nav class="w-full navbar bg-base-300">
 	<div class="max-w-7xl flex justify-between w-full m-auto">
 		<h1 class="flex-1 px-2 mx-2 font-libre text-3xl font-bold">
-			<a href={isAdmin ? '/admin/dashboard' : '/'}>Carlos Avila</a>
+			<a href={isAdmin ? '/admin/dashboard' : '/'}>CA</a>
 		</h1>
 		<section class="flex-none hidden lg:block">
 			<ul class="menu menu-horizontal">
