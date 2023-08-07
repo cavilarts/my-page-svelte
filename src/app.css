@@ -1,3 +1,128 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/LibreBaskerville-Regular') format('ttf');
+}
+
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/LibreBaskerville-Bold') format('ttf');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url('/fonts/TitilliumWeb-Black') format('ttf');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/TitilliumWeb-Bold') format('ttf');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/TitilliumWeb-SemiBold') format('ttf');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/TitilliumWeb-Regular') format('ttf');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('/fonts/TitilliumWeb-Light') format('ttf');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+	src: url('/fonts/TitilliumWeb-ExtraLight') format('ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url('/fonts/OpenSans-Bold') format('ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/OpenSans-Bold') format('ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/OpenSans-SemiBold') format('ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/OpenSans-Regular') format('ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('/fonts/OpenSans-Light') format('ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+	src: url('/fonts/OpenSans-ExtraLight') format('ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
