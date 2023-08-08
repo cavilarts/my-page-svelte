@@ -28,22 +28,22 @@
 			id="about"
 			class="mt-20 flex flex-wrap gap-10 items-stretch md:justify-between justify-center"
 		>
-			<div class="max-w-[250px] w-full" use:Tilt={{ scale: 1, reverse: false }}>
+			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
 				<Card title="React Developer">
 					<DiReact />
 				</Card>
 			</div>
-			<div class="max-w-[250px] w-full" use:Tilt={{ scale: 1, reverse: false }}>
+			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
 				<Card title="NodeJs Backend Developer">
 					<DiNodejsSmall />
 				</Card>
 			</div>
-			<div class="max-w-[250px] w-full" use:Tilt={{ scale: 1, reverse: false }}>
+			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
 				<Card title="Firebase Practitioner">
 					<DiFirebase />
 				</Card>
 			</div>
-			<div class="max-w-[250px] w-full" use:Tilt={{ scale: 1, reverse: false }}>
+			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
 				<Card title="Content Creator">
 					<MdChatBubble />
 				</Card>
