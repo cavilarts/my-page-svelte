@@ -5,7 +5,7 @@
 
 <section
 	class="hero min-h-screen"
-	style="background-image: url(/images/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg);"
+	style="background-image: url(/images/joshua-reddekopp-GkFQEOubrCo-unsplash.avif);"
 >
 	<div class="hero-overlay bg-opacity-60" />
 	<div class="hero-content text-center">

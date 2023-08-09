@@ -20,7 +20,7 @@
 			<TimelineDot
 				style={'width: 45px; height: 45px; background-color: #fff; display: flex; justify-content: center; border-color: transparent; '}
 			>
-				<img src="/images/krieger.png" alt="Krieger Digital" />
+				<img src="/images/krieger.webp" alt="Krieger Digital" />
 			</TimelineDot>
 			<TimelineConnector />
 		</TimelineSeparator>
@@ -64,7 +64,7 @@
 			<TimelineDot
 				style={'width: 45px; height: 45px; background-color: #fff; display: flex; justify-content: center; border-color: transparent; '}
 			>
-				<img src="/images/perficient.png" alt="Perficient" />
+				<img src="/images/perficient.webp" alt="Perficient" />
 			</TimelineDot>
 			<TimelineConnector />
 		</TimelineSeparator>
@@ -83,7 +83,7 @@
 			<TimelineDot
 				style={'width: 45px; height: 45px; background-color: #fff; display: flex; justify-content: center; border-color: transparent; '}
 			>
-				<img src="/images/globant.png" alt="Perficient" />
+				<img src="/images/globant.webp" alt="Perficient" />
 			</TimelineDot>
 			<TimelineConnector />
 		</TimelineSeparator>
@@ -122,7 +122,7 @@
 			<TimelineDot
 				style={'width: 45px; height: 45px; background-color: #fff; display: flex; justify-content: center; border-color: transparent; '}
 			>
-				<img src="/images/prodigious.png" alt="Perficient" class="w-full" />
+				<img src="/images/prodigious.webp" alt="Perficient" class="w-full" />
 			</TimelineDot>
 			<TimelineConnector />
 		</TimelineSeparator>

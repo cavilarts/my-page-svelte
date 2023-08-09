@@ -73,7 +73,7 @@
 		<section class="flex flex-wrap gap-0 items-stretch md:justify-between justify-center">
 			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
 				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure><img src="/images/Sellwhenever.png" alt="SellWhenever" /></figure>
+					<figure><img src="/images/Sellwhenever.webp" alt="SellWhenever" /></figure>
 					<div class="card-body">
 						<h2 class="card-title">SellWhenever</h2>
 						<p>Real State application to help Home owners in United States to match with Agents.</p>
@@ -88,7 +88,7 @@
 
 			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
 				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure><img src="/images/tmx.png" alt="UseTMX" /></figure>
+					<figure><img src="/images/tmx.webp" alt="UseTMX" /></figure>
 					<div class="card-body">
 						<h2 class="card-title">TMX News</h2>
 						<p>
@@ -106,7 +106,7 @@
 
 			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
 				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure><img src="/images/tmx.png" alt="UseTMX" /></figure>
+					<figure><img src="/images/southwest.webp" alt="UseTMX" /></figure>
 					<div class="card-body">
 						<h2 class="card-title">Southwest</h2>
 						<p>
@@ -124,7 +124,7 @@
 
 			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
 				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure><img src="/images/nissan-inventory.png" alt="Nissan Inventory" /></figure>
+					<figure><img src="/images/nissan-inventory.webp" alt="Nissan Inventory" /></figure>
 					<div class="card-body">
 						<h2 class="card-title">Nissan Car Inventory</h2>
 						<p>

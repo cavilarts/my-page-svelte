@@ -1,57 +1,57 @@
 <section class="flex flex-row flex-wrap justify-center gap-10 mt-8">
 	<div class="bg-white rounded-full p-2 w-24 flex content-center align-middle justify-center">
 		<figure>
-			<img src="/images/css3.png" alt="CSS 3" width="100" height="100" />
+			<img src="/images/css3.webp" alt="CSS 3" width="100" height="100" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/html5.png" alt="HTML5 3" width="100" height="100" />
+			<img src="/images/html5.webp" alt="HTML5 3" width="100" height="100" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/docker.png" alt="DOCKER" width="100" height="100" />
+			<img src="/images/docker.webp" alt="DOCKER" width="100" height="100" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24 overflow-hidden">
 		<figure>
-			<img src="/images/javascript.png" alt="JAVASCRIPT" width="100" height="100" />
+			<img src="/images/javascript.webp" alt="JAVASCRIPT" width="100" height="100" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/mongo.png" alt="MONGO" />
+			<img src="/images/mongo.webp" alt="MONGO" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/nextjs.png" alt="NEXTJS" />
+			<img src="/images/nextjs.webp" alt="NEXTJS" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/nodejs.png" alt="NODEJS" />
+			<img src="/images/nodejs.webp" alt="NODEJS" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/react.png" alt="REACT" />
+			<img src="/images/react.webp" alt="REACT" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/redux.png" alt="REDUX" />
+			<img src="/images/redux.webp" alt="REDUX" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/svelte.png" alt="SVELTE" />
+			<img src="/images/svelte.webp" alt="SVELTE" />
 		</figure>
 	</div>
 	<div class="bg-white rounded-full p-2 w-24">
 		<figure>
-			<img src="/images/webpack.png" alt="WEBPACK" />
+			<img src="/images/webpack.webp" alt="WEBPACK" />
 		</figure>
 	</div>
 </section>
