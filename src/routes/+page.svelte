@@ -13,6 +13,14 @@
 	import Footer from '../components/footer/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Carlos Avila Web Developer</title>
+	<meta
+		name="description"
+		content="Unlock the Potential of Your Projects with a Top-Tier Web Developer. I'm Carlos Avila, a software developer in Germany, skilled in React, Node.js, and Firebase. With expertise in Svelte, Vue, MongoDB, Express, Tailwind, and Bootstrap, I'm your go-to partner for web development excellence. Let's bring your ideas to life."
+	/>
+</svelte:head>
+
 <Hero
 	title="Hello my Name is Carlos Avila"
 	subtitle="I am a software developer currently based in Germany I have worked with many technologies, but my main focus is on React, NodeJs and Firebase. I also have

@@ -1,12 +1,15 @@
 <script>
 	import IoLogoYoutube from 'svelte-icons/io/IoLogoYoutube.svelte';
 	import IoLogoLinkedin from 'svelte-icons/io/IoLogoLinkedin.svelte';
+	import Logo from '../drawer/Logo.svelte';
 </script>
 
 <div class="w-full bg-neutral text-neutral-content">
 	<footer class="footer max-w-7xl mx-auto p-10 bg-neutral text-neutral-content">
 		<div>
-			<span class="footer-title font-libre text-4xl">CA</span>
+			<span class="w-[200px] h-[45px] block">
+				<Logo />
+			</span>
 			<p>Carlos Avila Ltd.<br />Providing reliable tech since 2008.</p>
 		</div>
 		<div>
