@@ -13,9 +13,9 @@
 			<p>Carlos Avila Ltd.<br />Providing reliable tech since 2008.</p>
 		</div>
 		<div>
-			<span class="footer-title">Social</span>
+			<span class="footer-title text-white opacity-100">Social</span>
 			<div class="grid grid-flow-col gap-4">
-				<a href="https://twitter.com/Carlos_A_Tech" target="_blank">
+				<a href="https://twitter.com/Carlos_A_Tech" target="_blank" aria-label="Twitter">
 					<svg
 						version="1.1"
 						xmlns="http://www.w3.org/2000/svg"
@@ -35,12 +35,12 @@
 						</g>
 					</svg>
 				</a>
-				<a href="https://www.youtube.com/@CarlosAvilaTech" target="_blank">
+				<a href="https://www.youtube.com/@CarlosAvilaTech" target="_blank" aria-label="Youtube">
 					<span class="block w-8 h-8">
 						<IoLogoYoutube />
 					</span>
 				</a>
-				<a href="https://linkedin.com/in/cavilarts" target="_blank">
+				<a href="https://linkedin.com/in/cavilarts" target="_blank" aria-label="Linkedin">
 					<span class="block w-8 h-8">
 						<IoLogoLinkedin />
 					</span>

@@ -13,7 +13,7 @@
 <nav class="w-full navbar bg-base-300">
 	<div class="max-w-7xl flex justify-between w-full m-auto">
 		<h1 class="flex-1 px-2 mx-2 font-libre text-3xl font-bold">
-			<a href={isAdmin ? '/admin/dashboard' : '/'}>
+			<a href={isAdmin ? '/admin/dashboard' : '/'} aria-label="Carlos Avila">
 				<span class="w-[200px] h-[45px] block">
 					<Logo />
 				</span>
