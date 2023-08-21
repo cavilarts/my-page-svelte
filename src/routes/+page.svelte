@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import DiReact from 'svelte-icons/di/DiReact.svelte';
 	import DiNodejsSmall from 'svelte-icons/di/DiNodejsSmall.svelte';
 	import DiFirebase from 'svelte-icons/di/DiFirebase.svelte';
@@ -11,6 +11,15 @@
 	import Timeline from '../components/timeline/Timeline.svelte';
 	import Tech from '../components/technologies/Tech.svelte';
 	import Footer from '../components/footer/Footer.svelte';
+
+	import { t } from '../lib/i18n';
+	let loadedData;
+	let works = loadedData as any;
+
+	t.subscribe((value) => {
+		loadedData = value('homepage.myWork.projects');
+		works = loadedData;
+	});
 </script>
 
 <svelte:head>
@@ -21,137 +30,69 @@
 	/>
 </svelte:head>
 
-<Hero
-	title="Hello my Name is Carlos Avila"
-	subtitle="I am a software developer currently based in Germany I have worked with many technologies, but my main focus is on React, NodeJs and Firebase. I also have
-	experience with other technologies like Svelte, Vue, MongoDB, Express, Tailwind, Bootstrap, etc."
-/>
+<Hero title={$t('homepage.hero.title')} subtitle={$t('homepage.hero.description')} />
 <section id="about">
 	<PageContent
-		title="Overview"
-		subtitle="Introduction"
-		description="I am a Frontend Engineer & technology enthusiast! Throughout my career, I have been driven by my passion for technology and my appreciation for connecting with individuals and community. I have 10 years of experience specializing in web development. I am well-equipped to take on challenging projects and drive exceptional results."
+		title={$t('homepage.overview.title')}
+		subtitle={$t('homepage.overview.subtitle')}
+		description={$t('homepage.overview.description')}
 	>
 		<section
 			id="about"
 			class="mt-20 flex flex-wrap gap-10 items-stretch md:justify-between justify-center"
 		>
-			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
-				<Card title="React Developer">
-					<DiReact />
-				</Card>
-			</div>
-			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
-				<Card title="NodeJs Backend Developer">
-					<DiNodejsSmall />
-				</Card>
-			</div>
-			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
-				<Card title="Firebase Practitioner">
-					<DiFirebase />
-				</Card>
-			</div>
-			<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
-				<Card title="Content Creator">
-					<MdChatBubble />
-				</Card>
-			</div>
+			{#each $t('homepage.overview.cards') as card}
+				<div class="w-[75px] max-w-[250px] md:w-full" use:Tilt={{ scale: 1, reverse: false }}>
+					<Card title={card}>
+						{#if card === 'NodeJs Backend Developer' || card === 'Desarrollador Backend NodeJs'}
+							<DiNodejsSmall />
+						{:else if card === 'Firebase Developer' || card === 'Desarrollador Firebase'}
+							<DiFirebase />
+						{:else if card === 'React Developer' || card === 'Desarrollador React'}
+							<DiReact />
+						{:else if card === 'Content Creator' || card === 'Creador de contenido'}
+							<MdChatBubble />
+						{/if}
+					</Card>
+				</div>
+			{/each}
 		</section>
 	</PageContent>
 </section>
-<PageContent title="Work Experience" subtitle="What I've done so far">
+<PageContent title={$t('homepage.workExperience.title')} subtitle="What I've done so far">
 	<Timeline />
 	<Tech />
 </PageContent>
 
 <section id="projects">
 	<PageContent
-		title="Projects"
-		subtitle="My Work"
-		description="I have collaborated with many companies and organizations, here are some of them and the projects I have worked on."
+		title={$t('homepage.projects.title')}
+		subtitle={$t('homepage.projects.subtitle')}
+		description={$t('homepage.projects.description')}
 	>
 		<section class="flex flex-wrap gap-0 items-stretch md:justify-between justify-center">
-			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
-				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure>
-						<img src="/images/Sellwhenever.webp" alt="SellWhenever" width="385" height="210" />
-					</figure>
-					<div class="card-body">
-						<h2 class="card-title">SellWhenever</h2>
-						<p>Real State application to help Home owners in United States to match with Agents.</p>
-						<div class="card-actions justify-end">
-							<span class="text-primary">#NextJs</span>
-							<span class="text-secondary">#React</span>
-							<span class="text-accent">#Styled Components</span>
+			{#each works as work (work)}
+				<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
+					<div class="card w-96 bg-base-100 shadow-xl">
+						<figure>
+							<img src={work.image} alt={work.title} width="385" height="210" />
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">{work.title}</h2>
+							<p>
+								{work.description}
+							</p>
+							<div class="card-actions justify-end">
+								{#each work.technologies as tag}
+									<span class="badge badge-outline">{tag}</span>
+								{/each}
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
-				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure><img src="/images/tmx.webp" alt="UseTMX" width="385" height="210" /></figure>
-					<div class="card-body">
-						<h2 class="card-title">TMX News</h2>
-						<p>
-							TMX web application to upload content as journalist and be able to sell to news
-							corporations
-						</p>
-						<div class="card-actions justify-end">
-							<span class="text-secondary">#React</span>
-							<span class="text-primary">#Redux</span>
-							<span class="text-accent">#Sass</span>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
-				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure>
-						<img src="/images/southwest.webp" alt="UseTMX" width="385" height="210" />
-					</figure>
-					<div class="card-body">
-						<h2 class="card-title">Southwest</h2>
-						<p>
-							I have collaborated with Low-Fare callendar team to help them with the implementation
-							of the new design of the website.
-						</p>
-						<div class="card-actions justify-end">
-							<span class="text-secondary">#React</span>
-							<span class="text-primary">#Redux</span>
-							<span class="text-accent">#Sass</span>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="sm:px-16 px-6 sm:py-20 py-10 max-w-7xl mx-auto relative z-0 mt-0">
-				<div class="card w-96 bg-base-100 shadow-xl">
-					<figure>
-						<img
-							src="/images/nissan-inventory.webp"
-							alt="Nissan Inventory"
-							width="385"
-							height="210"
-						/>
-					</figure>
-					<div class="card-body">
-						<h2 class="card-title">Nissan Car Inventory</h2>
-						<p>
-							I have collaborated with the car Inventory for multiple markets, I have helped them
-							with the implementation and the architecture of the application.
-						</p>
-						<div class="card-actions justify-end">
-							<span class="text-secondary">#Backbone</span>
-							<span class="text-primary">#Marionette</span>
-							<span class="text-accent">#Sass</span>
-						</div>
-					</div>
-				</div>
-			</section>
-		</section>
-	</PageContent>
+				</section>
+			{/each}
+		</section></PageContent
+	>
 </section>
 
 <Footer />
