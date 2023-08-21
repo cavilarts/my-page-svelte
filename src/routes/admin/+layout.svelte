@@ -9,7 +9,6 @@
 	onMount(() => {
 		const unsubscribe = auth.onAuthStateChanged(async (user) => {
 			const currentPath = window.location.pathname;
-			debugger;
 
 			if (!user && !nonAuthRoutes.includes(currentPath)) {
 				window.location.href = '/admin';
